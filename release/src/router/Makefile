@@ -1773,7 +1773,7 @@ transmission/stamp-h1: openssl libcurl libevent zlib
 			-L$(TOP)/zlib -L$(TOP)/openssl -L$(TOP)/libcurl/lib/.libs -L$(TOP)/libevent/.libs" \
 		HAVE_CXX=yes \
 		$(CONFIGURE) --target=mipsel-linux --host=mipsel-linux --build=x86_64-linux-gnu --prefix=/usr --disable-nls \
-			--enable-lightweight --enable-largefile --enable-utp --without-gtk \
+			--enable-lightweight --enable-largefile --enable-utp --without-gtk --with-systemd-daemon="no" \
 			LIBCURL_CFLAGS="-I$(TOP)/libcurl/include" \
 			LIBCURL_LDFLAGS="-L$(TOP)/libcurl/lib/.libs/" \
 			LIBCURL_LIBS="-lcurl" \
